@@ -7,17 +7,17 @@ int main() {
     float f=FLT_MAX;
     double d=DBL_MAX;
     
-    printf("Size of int is %ld", sizeof(int));
+    printf("Size of int is %lu", sizeof(int));
     printf("\n");
     printf("Its maximum value is %d", integer);
     printf("\n");
-    printf("Size of float is %ld", sizeof(float));
+    printf("Size of float is %lu", sizeof(float));
     printf("\n");
-    printf("Its maximum value is %.6f", f);
+    printf("Its maximum value is %.2f", f);
     printf("\n");
-    printf("Size of double is %ld", sizeof(int));
+    printf("Size of double is %lu", sizeof(int));
     printf("\n");
-    printf("Its maximum value is %f", d);
+    printf("Its maximum value is %lf", d);
        
 
 
