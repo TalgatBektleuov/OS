@@ -25,8 +25,8 @@ void delete(struct Node* head, struct Node* node_to_delete) {
 
     struct Node* current = head;
     if (current == node_to_delete) {
-        printf("A node with value %d deleted\n", node_to_delete->data);
         *head = *(node_to_delete->next);
+        printf("A node with value %d deleted\n", node_to_delete->data);
         return;
     }
     while (current->next != node_to_delete) {
