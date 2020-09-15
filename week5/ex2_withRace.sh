@@ -10,6 +10,7 @@ do
 	expr $a + 1 >> Numbers.txt
 done
 #The part of the program where the shared memory of two files or two processes is accessed is called the critical region
+#Numbers stopped to double at 9.
 #Here, race problem is not handled anyhow. 
 
 
