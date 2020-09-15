@@ -6,7 +6,7 @@
 char buffer[N];
 int position=1;
 int consumberIsSleeping, producerIsSleeping;
-long long int t;
+long long int number;
 void* consume(void *x){
   while(1){
     if(consumberIsSleeping){
@@ -17,6 +17,7 @@ void* consume(void *x){
       producerIsSleeping=0;
       continue;
     }
+    
     printf("%d", buffer[position]);
     position--;
   }
@@ -30,9 +31,10 @@ void* produce(void *x){
       continue;
     }
     if(position==N){
-      consumberIsSleeping=0;
       producerIsSleeping=1;
-      printf(", number is %lld\n", t++);
+      consumberIsSleeping=0;
+      
+      printf(", number is %lld\n", number++);
       continue;
     }
     buffer[position]=position;
@@ -45,6 +47,7 @@ void* produce(void *x){
 
 int main(){
     consumberIsSleeping=1;
+    producerIsSleeping=0;
     pthread_t Producer_thread, Consumer_thread;
     pthread_create(&Producer_thread, NULL, produce, NULL);
     pthread_create(&Consumer_thread, NULL, consume, NULL);
