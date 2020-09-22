@@ -53,7 +53,7 @@ int main(void) {
     c++;
   }
   int completionTime[100], turnaroundTime[100], waitingTime[100];
-  int totalTurnaroundTime, totalWaitingTime;
+  float totalTurnaroundTime=0.0, totalWaitingTime=0.0;
 
   completionTime[arr[0][2]]=arr[0][1];
   waitingTime[arr[0][2]]=0;
@@ -65,12 +65,14 @@ int main(void) {
   }
   printf("Process\tCompletionTime\tWaitingTime\tTurnaround Time\n");
   for(int i=0;i<n;i++){
-    printf("P%d\t\t %d\t\t%d\t\t\%d\n",i+1,completionTime[i],waitingTime[i],turnaroundTime[i]);
+    printf("P%d\t\t\t %d\t\t\t\t%d\t\t\t\t\%d\n",i+1,completionTime[i],waitingTime[i],turnaroundTime[i]);
+    totalWaitingTime=totalWaitingTime + waitingTime[i];
+    totalTurnaroundTime=totalTurnaroundTime+turnaroundTime[i];
   }
+  printf("Average waiting time: %f\nAverage turnaround time: %f",totalWaitingTime/n,totalTurnaroundTime/n);
   // for(int i=0;i<n;i++){
   //   printf("%d %d\n",arr[i][0], arr[i][1]);
   // }
 
   return 0;
 }
-
