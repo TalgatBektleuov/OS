@@ -136,7 +136,11 @@ P14          23             4               6
 Average waiting time: 3.428571
 Average turnaround time: 5.142857
 
-As we can see because q is so low. Waiting time and turnaround of each process will increase. This is obvius because each process will not be able to finish very fastly due to quantum restriction. If we increase the quantum quantity, waiting time and turnaround time will decrease. Whereas SJF gives us opportunity to finish all tasks fastly with low waiting time and turnaround time. 
+As we can see because q is so low, Waiting time and turnaround of each process will increase. 
+This is obvius because each process will not be able to finish very fastly due to quantum restriction. 
+If we increase the quantum quantity, waiting time and turnaround time will decrease. 
+Whereas SJF gives us opportunity to finish all tasks fastly with low waiting time and turnaround time. 
+Again Round Robin algorithm leaves a lot of long processes unfinished due to quantum. 
 
 Now let's look on the FCFS algorithm: 
 Process completionTime WaitingTime TurnaroundTime
@@ -157,8 +161,10 @@ P13              24           5         7
 Average turnaround time: 4.571429
 Average waiting time: 2.857143
 
-Average turnaround time and Average waiting time are higher than that of SJF algorithm. 
+All processes will finished in order and we do not take into consideration their burst time.
+Average turnaround time and Average waiting time are higher than that of SJF algorithm because it does not make any efficiency. 
 
-But overall performance is same for all cases. This is because they all finish at the same time.
+
+But overall performance is same for all cases. This is because they all finish at the same time. 
 */
 }
