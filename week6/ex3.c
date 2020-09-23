@@ -56,10 +56,7 @@ int main(void) {
         arr[i][1]=-1;
         c=i;
       }
-      if(arr[i][0]>timeLine && c!=i){
-        
-        i=-1;
-      }
+      
       if(arr[i][0]>timeLine && c!=i-1){
         
         i=-1;
