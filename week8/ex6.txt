@@ -1,0 +1,2 @@
+For 8KB pages, 13 bits are needed for offset. As we have 16-bit virtual addresses, 2^(16-13) entries are needed for 
+a single level linear page table. So the answer is 2^3=8 entries

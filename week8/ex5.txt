@@ -1,0 +1,4 @@
+Physical address can only use limited amount of memory, whereas virtual addresses can use 
+any amount of memory even larger than physical memory has.
+These two spaces are independent.
+Any machine might have virtual addresses with more (large) memory even if it has less memory. 
