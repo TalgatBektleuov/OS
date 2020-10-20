@@ -1,0 +1,15 @@
+
+  1  touch _ex3.txt
+  2  chmod a-x _ex3.txt 
+  3  ls -l
+  4  chmod u+x _ex3.txt
+  5  chmod o+rx _ex3.txt
+  6  ls -l
+  7  chmod -R g=u _ex3.txt
+  8  ls -l
+  9  history > ex3.txt
+
+660 means that file's mode is -rw-rw----
+775 means that file's mode for owner and group to -rwx, for others it will ber -rx access
+777 means that file's for everyone will be -rwx. This is risky
+
