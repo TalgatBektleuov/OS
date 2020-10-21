@@ -5,3 +5,13 @@
    5  ls -i _ex1_1.txt
    6  ls -i _ex1.txt
    7  history>ex1.txt
+   
+It showed me:
+talgat@DESKTOP-7P2RTDN:/mnt/c/os/week10$ ls -i _ex1_2.txt
+8725724278106412 _ex1_2.txt
+talgat@DESKTOP-7P2RTDN:/mnt/c/os/week10$ ls -i _ex1.txt
+8725724278106412 _ex1.txt
+talgat@DESKTOP-7P2RTDN:/mnt/c/os/week10$ ls -i _ex1_1.txt
+8725724278106412 _ex1_1.txt
+   
+As we can see, all i-node numbers are the same: 8725724278106412
