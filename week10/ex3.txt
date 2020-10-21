@@ -2,14 +2,48 @@
   1  touch _ex3.txt
   2  chmod a-x _ex3.txt 
   3  ls -l
+ total 12
+-rwxrwxrwx 3 talgat talgat   0 Oct 21 15:09 _ex1.txt
+-rwxrwxrwx 3 talgat talgat   0 Oct 21 15:09 _ex1_1.txt
+-rwxrwxrwx 3 talgat talgat   0 Oct 21 15:09 _ex1_2.txt
+-rwxrwxrwx 1 talgat talgat   0 Oct 21 15:23 _ex3.txt
+-rwxrwxrwx 1 talgat talgat 168 Oct 20 18:24 ex1.txt
+-rwxrwxrwx 1 talgat talgat 327 Oct 20 19:10 ex2.txt
+-rwxrwxrwx 1 talgat talgat 374 Oct 20 19:08 ex3.txt
   4  chmod u+x _ex3.txt
-  5  chmod o+rx _ex3.txt
-  6  ls -l
-  7  chmod -R g=u _ex3.txt
-  8  ls -l
-  9  history > ex3.txt
+  5 ls -l
+ total 12
+-rwxrwxrwx 3 talgat talgat   0 Oct 21 15:09 _ex1.txt
+-rwxrwxrwx 3 talgat talgat   0 Oct 21 15:09 _ex1_1.txt
+-rwxrwxrwx 3 talgat talgat   0 Oct 21 15:09 _ex1_2.txt
+-rwxrwxrwx 1 talgat talgat   0 Oct 21 15:23 _ex3.txt
+-rwxrwxrwx 1 talgat talgat 168 Oct 20 18:24 ex1.txt
+-rwxrwxrwx 1 talgat talgat 327 Oct 20 19:10 ex2.txt
+-rwxrwxrwx 1 talgat talgat 374 Oct 20 19:08 ex3.txt
+  6  chmod o+rx _ex3.txt
+  7  ls -l
+ total 12
+-rwxrwxrwx 3 talgat talgat   0 Oct 21 15:09 _ex1.txt
+-rwxrwxrwx 3 talgat talgat   0 Oct 21 15:09 _ex1_1.txt
+-rwxrwxrwx 3 talgat talgat   0 Oct 21 15:09 _ex1_2.txt
+-rwxrwxrwx 1 talgat talgat   0 Oct 21 15:23 _ex3.txt
+-rwxrwxrwx 1 talgat talgat 168 Oct 20 18:24 ex1.txt
+-rwxrwxrwx 1 talgat talgat 327 Oct 20 19:10 ex2.txt
+-rwxrwxrwx 1 talgat talgat 374 Oct 20 19:08 ex3.txt
+  
+  8  chmod -R g=u _ex3.txt
+  9  ls -l
+ total 12
+-rwxrwxrwx 3 talgat talgat   0 Oct 21 15:09 _ex1.txt
+-rwxrwxrwx 3 talgat talgat   0 Oct 21 15:09 _ex1_1.txt
+-rwxrwxrwx 3 talgat talgat   0 Oct 21 15:09 _ex1_2.txt
+-rwxrwxrwx 1 talgat talgat   0 Oct 21 15:23 _ex3.txt
+-rwxrwxrwx 1 talgat talgat 168 Oct 20 18:24 ex1.txt
+-rwxrwxrwx 1 talgat talgat 327 Oct 20 19:10 ex2.txt
+-rwxrwxrwx 1 talgat talgat 374 Oct 20 19:08 ex3.txt
+  10  history > ex3.txt
 
-660 means that file's mode is -rw-rw----
+660 means that file's mode is -rw
 775 means that file's mode for owner and group to -rwx, for others it will ber -rx access
 777 means that file's for everyone will be -rwx. This is risky
 
