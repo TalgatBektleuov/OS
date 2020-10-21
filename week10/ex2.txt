@@ -4,9 +4,14 @@
    3  touch file.txt
    4  cd ..
    5  cd week10
-   6  ls -i _ex2.txt
-   7  find /mnt/c/os 5348024557567754
+   6  link /mnt/c/os/week1/file.txt _ex2.txt
+   7  ls -i _ex2.txt
    8  find /mnt/c/os -inum 5348024557567754
-   9  find /mnt/c/os -inum 5348024557567754 -exec rm {}\;
-   10 find /mnt/c/os/week1 -inum 5348024557567754  -exec rm {}\;
+         /mnt/c/os/week1/file.txt
+         /mnt/c/os/week10/_ex2.txt
+   9  cd ..
+   10 /mnt/c/os$ find . -inum  5348024557567754 -exec rm -i {} \;
+       rm: remove regular empty file './week1/file.txt'? y
+       rm: remove regular empty file './week10/_ex2.txt'? y
+       
    11 history > ex2.txt
