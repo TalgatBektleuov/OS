@@ -1,1 +1,3 @@
-The difference is that in the 1st case "Hello\n" is printed twice, whereas in the 2nd case, "Hello" is printed and then "\n" is printed twice. And because of "\n" in 2nd case, buffer will be cleared.
+The difference is that in the 1st case "Hello\n" is printed twice, 
+whereas in the 2nd case, "Hello" is printed and then "\n" is printed twice.
+And because of "\n" in 2nd case, buffer will have "\n" and thus "\n" will be printed twice.
