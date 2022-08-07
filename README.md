@@ -1,1 +1,1 @@
-# Operating Systems assignments. Innopolis University.
+# Operating Systems assignments at Innopolis University.
